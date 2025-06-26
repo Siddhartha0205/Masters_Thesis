@@ -1,6 +1,13 @@
-# Masters_Thesis
+# Master's Thesis: Intelligent Vehicle Access and Exit System Design - A Machine Learning Approach Integrated into the Seat-Box Architecture
+
+
+<h2>Highlights of the Thesis</h2>
 
 My master's thesis is a collaboration project between the <b>[Institute of Industrial Automation and Software Engineering](https://www.ias.uni-stuttgart.de/en/)</b> at the <b>University of Stuttgart</b> and the <b>[Porsche Engineering Services](https://www.porscheengineering.com/de/peg/)</b> team.
+
+Remarkably, the idea of thesis has been conceptualized and presented by Honda as [Honda concept zero](https://youtu.be/m_7gYNgjNRk) in CES 2025 summit in Las Vegas, Nevada, showcasing the capability to set the baseline for the standards of the vehicle's cabin designed in the coming future. However, this thesis already paved the foundation in this aspect.
+
+This project work aims to reduce prevalant issues such as vehicle theft and road accidents that occur due to distracted driving by introducing biometric recognition capabilites through integration of machine learning algorithms.
 
 
 <h2>Introduction</h2>
@@ -46,4 +53,22 @@ This thesis aims to develop an intelligent access and exit system by incorporati
 <p>Typically, each target function is executed sequentially in a serial order. However, certain features require significant execution time. For instance, playing a song can take 3 – 5 minutes. Running the software in a strictly sequential manner would effectively disable all other functionalities until the song finishes playing. To address this issue, a separate process is created for time-intensive tasks, enabling parallel execution of target functions through a multiprocessing approach. This ensures that primary functionalities, such as driver identification and gesture recognition remain operational without interruption. The entire process iterates continuously throughout the driving cycle, terminating only when the vehicle is switched off. </p>
 
 
+<h3>Hardware Components</h3>
 
+**Table**
+
+
+<h2>Results</h2>
+
+**video**
+
+
+<h2> Conclusion </h2>
+
+<p>In summary, this thesis explores the potential for enhancing vehicle security and improving the driving experience through the incorporation of ML techniques. Several target functions designed to improve vehicle security and user experience have been successfully realized through simulations conducted in an extensive driver’s cockpit. </p>
+
+<p>Traditional access systems, which rely on mechanical devices, have been replaced with a biometric recognition approach. This enables the system to identify users by extracting facial features, addressing security concerns effectively. Authorized users can interact with vehicle actuators through personalized gesture recognition systems, empowering the driver to activate or deactivate features with minimal cognitive distraction, thereby reducing road fatalities. These system functions have been developed without hardware constraints, allowing for adaptability across different markets. </p>
+
+<p>Additionally, the experimental setup is equipped with a speech recognition system to enable interaction with system functionalities while maintaining undivided attention. An extensive cockpit, providing comfortable and safe space for passengers while accommodating the hardware components, has been constructed to simulate the experiment.</p>
+
+<p>Two primary concerns in ML applications: user privacy and the need for a large dataset are addressed through the implementation of FL that facilitates collaborative training across multiple clients without requiring the sharing of sensitive information with third parties. </p>
