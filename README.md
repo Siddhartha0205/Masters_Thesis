@@ -9,6 +9,10 @@ Remarkably, the idea of thesis has been conceptualized and presented by Honda as
 
 This project work aims to reduce prevalant issues such as vehicle theft and road accidents that occur due to distracted driving by introducing biometric recognition capabilites through integration of machine learning algorithms.
 
+Each individual has their own style of gesture display. Collecting their images to train the model is tedious and leads to privacy concerns. Federated learning framework has been established to mitigate this issue.
+
+A rig structure consisting of 3 individual components resembling a vehicle while including driver's cockpit has been built to mount the hardware suite and carry out simulations. Necessary care has been taken for easy mounting and possibility to shift the entire structure across different locations for presentations.
+
 
 <h2>Introduction</h2>
 
@@ -39,7 +43,7 @@ This thesis aims to develop an intelligent access and exit system by incorporati
 <h3>System Level Architecture</h3>
 
 <p align = "center">
-  <img src = "Images/System_level_architecture.png" width = "50%"/>
+  <img src = "Images/System_level_architecture.png" width = "75%"/>
 </p>
 
 <p>The entire architecture of the prototype can be categorized into three distinct sections, as illustrated in the above figure. The first category, the sensor site, comprises various components that collect data by sensing the environmental conditions. This data is transmitted to the controller site, where it is processed for model training and used to generate predictions. Based on these predictions, the actuators in the actuator site are either activated or deactivated through interfaces with the controller units. </p>
@@ -49,7 +53,7 @@ This thesis aims to develop an intelligent access and exit system by incorporati
 <h3>System Workflow</h3>
 
 <p align = "center">
-  <img src = "Images/System_level_workflow.png" width = "50%"/>
+  <img src = "Images/System_level_workflow.png" width = "75%"/>
 </p>
 
 <p>The camera mounted on the rig structure identifies the user attempting to access the vehicle’s entry system. Upon recognizing a gesture from an authorized user, the RADAR module begins calculating the distance to the user, and the vehicle door opens until it reaches the fully open state. If an obstacle is detected within the threshold range (equivalent to the door's length), the system halts the door's movement to prevent a possible collision.  </p>
@@ -61,12 +65,19 @@ This thesis aims to develop an intelligent access and exit system by incorporati
 
 <h3>Hardware Components</h3>
 
-**Table**
+| Functionality  | Component |
+| ------------- | ------------- |
+| Visual perception | Intel RealSense Camera D456  |
+| Speech recognition  | Grove Speech Recognizer  |
+| Temperature regulation  | DHT22  |
+| Distance estimation  | Acconeer A121 RADAR  |
+| Controllers  | Nvidia Jetson Orin AGX |
+|   | Raspberry Pi 4B |
 
 
 <h2>Results</h2>
 
-**video**
+The output video is too large to upload into GitHub repository. Hence, I uploaded it into my [Google Drive](https://drive.google.com/drive/folders/1363uuwmP1Jn1XqigAxhVm5ZpX1Psou0v?usp=sharing). This information is shared only to showcase my thesis output. Hence, it is requested not to share or misuse the video.
 
 
 <h2> Conclusion </h2>
