@@ -21,7 +21,9 @@ This thesis aims to develop an intelligent access and exit system by incorporati
 
 <h2>General Architecture and Setup</h2>
 
-**figure**
+<p align = "center">
+  <img src = "Images/System_architecture_design.png" width = "50%"/>
+</p>
 
 <p>The prototype design can be categorized into three layers at the system level, as illustrated in the above. At the sensor layer, various devices including a camera, speech recognition sensor, and temperature sensor, are mounted onto the prototype to capture environmental data. The controller layer encompasses devices such as Nvidia Jetson Orin AGX which process the input data. Machine learning frameworks are stored on these controllers to make predictions using trained models. Finally, at the actuator layer, actions are carried out based on the predictions derived from the input signals. </p>
 
@@ -36,7 +38,9 @@ This thesis aims to develop an intelligent access and exit system by incorporati
 
 <h3>System Level Architecture</h3>
 
-**figure**
+<p align = "center">
+  <img src = "Images/System_level_architecture.png" width = "50%"/>
+</p>
 
 <p>The entire architecture of the prototype can be categorized into three distinct sections, as illustrated in the above figure. The first category, the sensor site, comprises various components that collect data by sensing the environmental conditions. This data is transmitted to the controller site, where it is processed for model training and used to generate predictions. Based on these predictions, the actuators in the actuator site are either activated or deactivated through interfaces with the controller units. </p>
 
@@ -44,7 +48,9 @@ This thesis aims to develop an intelligent access and exit system by incorporati
 
 <h3>System Workflow</h3>
 
-**figure**
+<p align = "center">
+  <img src = "Images/System_level_workflow.png" width = "50%"/>
+</p>
 
 <p>The camera mounted on the rig structure identifies the user attempting to access the vehicle’s entry system. Upon recognizing a gesture from an authorized user, the RADAR module begins calculating the distance to the user, and the vehicle door opens until it reaches the fully open state. If an obstacle is detected within the threshold range (equivalent to the door's length), the system halts the door's movement to prevent a possible collision.  </p>
 
